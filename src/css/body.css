@@ -1,0 +1,132 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+:root {
+  --body-Bg-color: #131925;
+  --input-Bg-color: #2a3344;
+  --intro-heading-color: rgba(255, 255, 255, 0.5);
+  --intro-para-color: rgba(255, 255, 255, 0.6);
+}
+@font-face {
+  font-family: mosRegular;
+  src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+body {
+  background: var(--body-Bg-color);
+  overflow-x: hidden;
+  font-family: mosRegular;
+}
+.intro {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-family: mosRegular;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro > h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  color: var(--intro-heading-color);
+}
+.intro > p {
+  line-height: 1.5rem;
+  text-align: center;
+
+  max-width: 80vh;
+  color: var(--intro-para-color);
+}
+
+.container {
+  padding: 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+  margin: 80px auto;
+  max-width: 80vh; /* intensionally used 80vh*/
+  background: var(--input-Bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+@media (max-width: 800px) {
+  .container {
+    margin: 2rem 1rem;
+  }
+}
+
+.container input {
+  border-radius: 0.3rem;
+  color: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  border: none;
+  background: #000000;
+  font-family: mosRegular;
+  margin: 0.4rem;
+  padding: 0.99rem;
+
+  width: 90%;
+}
+.container .label {
+  font-family: mosRegular;
+  width: 90%;
+  color: rgb(255, 255, 255);
+}
+input:focus {
+  outline: 1px solid white;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+button {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
+
+  cursor: pointer;
+  font-family: mosRegular;
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  background-color: hsla(27, 100%, 50%, 0.7);
+  border: none;
+  border-radius: 5px;
+  width: 55%;
+  padding: 0.6rem;
+  outline: none;
+  margin: 1rem;
+}
+.additional_options {
+  display: block;
+  color: rgba(0, 132, 255, 0.8);
+  font-family: mosRegular;
+  text-transform: capitalize;
+  text-align: center;
+  cursor: pointer;
+}
+
+.circle {
+  left: -6rem;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(85deg, orangered, transparent);
+}
+.footer {
+  position: relative;
+  height: fit-content;
+  margin-top: 3rem;
+  text-align: center;
+  font-family: mosRegular;
+  color: white;
+}
+.footer > h3 {
+  font-weight: 500;
+  font-size: 0.8rem;
+
+  margin: 0.9rem;
+}

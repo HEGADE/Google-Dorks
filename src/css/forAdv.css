@@ -1,0 +1,57 @@
+.advance_input {
+  color: whitesmoke;
+  display: grid;
+  place-items: center;
+  gap: 0.5rem;
+}
+.options_container {
+  display: flex;
+  gap: 3rem;
+  margin: 1rem;
+}
+.options_container > div {
+  width: max-content;
+  font-size: medium;
+  border-radius: 1000px;
+  padding: 0.4rem 1rem;
+  background-color: orangered;
+}
+.advance_input strong {
+  cursor: pointer;
+}
+
+
+
+.advance_input_container {
+margin: 50px auto;
+  max-width: 80vh;
+  padding: 1rem;
+  background-color: var(--input-Bg-color);
+  height: 392px;
+  display: flex;
+  align-items: center;
+  background-blend-mode: darken;
+  flex-direction: column;
+  gap: 1rem;
+}
+.advance_input_container >div{
+  margin: 1rem;
+  width: 90%;
+}
+.advance_input_container p{
+  margin: 1rem;
+  color: white;
+  
+}
+.advance_input_container input {
+  width: 100%;
+  border-radius: 0.3rem;
+  color: white;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+  border: none;
+  background: #000000;
+  font-family: mosRegular;
+  margin: 0.4rem;
+  padding: 0.99rem;
+
+}
