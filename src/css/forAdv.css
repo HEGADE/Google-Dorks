@@ -14,8 +14,9 @@
   font-size: medium;
   border-radius: 1000px;
   padding: 0.4rem 1rem;
-  background-color: orangered;
+  background-color: #ff4400;
 }
+
 .advance_input strong {
   cursor: pointer;
 }
@@ -34,12 +35,18 @@ margin: 50px auto;
   flex-direction: column;
   gap: 1rem;
 }
+@media (max-width: 800px) {
+  .advance_input_container {
+    margin: 2rem 1rem;
+  
+  }
+}
 .advance_input_container >div{
-  margin: 1rem;
+  margin: .1rem 1rem;
   width: 90%;
 }
 .advance_input_container p{
-  margin: 1rem;
+  margin: .5rem;
   color: white;
   
 }

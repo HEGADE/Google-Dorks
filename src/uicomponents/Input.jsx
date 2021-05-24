@@ -1,18 +1,22 @@
-import React, { useState,useContext } from "react";
-// import { google } from "../helper/google";
-import {storeStore} from "../state/Store"
+import React, { useContext } from "react";
+
+import { storeStore } from "../state/Store";
 
 import Label from "./label/Label";
-import Button from "../uicomponents/Button"
+import Button from "../uicomponents/Button";
 
 export const Input = () => {
-  // const [showHelpOrNot, setshowHelpOrNot] = useState(true);
-  // const [search, setSearch] = useState("");
-  // const [exclude, setExclude] = useState([]);
-  // const [sites, setSites] = useState("");
-  const {search,setSearch,exclude,setExclude,sites,setSites,showHelpOrNot,setshowHelpOrNot} =useContext(storeStore)
+  const {
+    search,
+    setSearch,
+    exclude,
+    setExclude,
+    sites,
+    setSites,
+    showHelpOrNot,
+    setshowHelpOrNot,
+  } = useContext(storeStore);
 
- 
   function showHelp(e) {
     if (showHelpOrNot) {
       e.target.focus();
@@ -49,7 +53,7 @@ export const Input = () => {
             value={sites}
             onChange={(e) => setSites(e.target.value)}
           />
-<Button type="Filter"/>
+          <Button type="Filter" />
         </div>
       </div>
     </>
