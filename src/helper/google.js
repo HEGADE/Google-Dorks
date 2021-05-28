@@ -3,7 +3,7 @@ export const google = (search, exclude, sites) => {
     return alert("Fill the field");
   let excludedString = makeExcludeString(exclude);
   let site = sites ? "site:" : "";
-  window.location = `https://google.com?q=${site}${sites} ${search} ${excludedString} `;
+  window.location = `https://google.com/search?q=${search} ${excludedString} ${site} ${sites}  `;
 };
 const makeExcludeString = (exclude) => {
   let excludedString = "";

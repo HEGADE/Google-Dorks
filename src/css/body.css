@@ -123,14 +123,14 @@ button {
 .circle {
   left: -6rem;
   position: absolute;
-  bottom: 0;
+  
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background: linear-gradient(85deg, orangered, transparent);
 }
 .footer {
-  position: absolute;
+  position: relative;
   width: 100vw;
   bottom: 5px;
   display: flex;
