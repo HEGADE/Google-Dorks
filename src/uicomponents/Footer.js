@@ -3,6 +3,7 @@ import React from "react";
 export const Footer = () => {
   return (
     <>
+
       <div className="footer">
         <h3>Developed By S Hegade</h3>
         <p>All Rights Reserved &copy;</p>

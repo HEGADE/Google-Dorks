@@ -6,8 +6,8 @@ export const Intro = () => {
       <div className="intro">
         <h3>Google Dorks Made Easy</h3>
         <p>
-          Even though Goggle provides Results ,sometimes we may need to filter
-          somethings from that, this app will help you to do that
+          The app is for education purpose only. The result is provided by
+          google, if result goes wrong try to blame google and, Use it wisely
         </p>
       </div>
     </>

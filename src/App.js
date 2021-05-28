@@ -1,17 +1,15 @@
-import React, { useState ,useContext} from "react";
+import React, { useState } from "react";
 import { Intro } from "./uicomponents/Intro";
 import { Input } from "./uicomponents/Input";
 import { AdvanceInput } from "./uicomponents/AdvanceInput";
 import { Circle } from "./uicomponents/Circle";
 import { Footer } from "./uicomponents/Footer";
-import {storeStore} from "./state/Store"
 import {useCleaner} from "./helper/useCleaner"
 
 
 function App() {
 
 
-  const {setSearch} =useContext(storeStore)
   const [option, setOption] = useState("for advance options");
   const [display, setDisplay] = useState(false);
   const {setSearch:ser,setExclude,setSites}=useCleaner()
@@ -34,7 +32,7 @@ function App() {
       </strong>
 
       <Circle />
-      <Footer />
+      {!display && <Footer />}
     </>
   );
 }

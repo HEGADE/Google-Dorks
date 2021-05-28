@@ -1,9 +1,10 @@
 import React ,{useContext}from 'react'
 import {storeStore} from "../state/Store"
+import {userFinder} from "../helper/userFinder"
 
 
 const Button = ({type}) => {
-    const {google,numberFinder,search,setSearch,exclude,sites} =useContext(storeStore)
+    const {google,numberFinder,search,exclude,sites} =useContext(storeStore)
 
     function Search(e) {
         console.log(e.target.innerText);
@@ -12,7 +13,7 @@ const Button = ({type}) => {
         if(e.target.innerText==="Find")
          return numberFinder(search);
         if(e.target.innerText==="Search")
-         return numberFinder(search);
+         return userFinder(search,exclude,sites);
         
       }
    

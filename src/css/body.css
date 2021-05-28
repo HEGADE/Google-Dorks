@@ -14,6 +14,7 @@
   src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
 }
 
+
 body {
   background: var(--body-Bg-color);
   overflow-x: hidden;
@@ -43,6 +44,9 @@ body {
 
 .container {
   padding: 1rem;
+  z-index: 10;
+  backdrop-filter: blur(20px);
+  background-clip: padding-box;
   border-radius: 0.3rem;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
   margin: 80px auto;
@@ -54,6 +58,8 @@ body {
   flex-direction: column;
   gap: 0.5rem;
 }
+
+
 @media (max-width: 800px) {
   .container {
     margin: 2rem 1rem;
@@ -62,6 +68,10 @@ body {
 }
 
 .container input {
+  z-index: 2;
+
+  backdrop-filter: blur(200px);
+  background-clip: padding-box;
   border-radius: 0.3rem;
   color: white;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
@@ -82,6 +92,7 @@ input:focus {
   outline: 1px solid white;
 }
 input::placeholder {
+  text-transform: capitalize;
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -98,7 +109,7 @@ button {
   width: 55%;
   padding: 0.6rem;
   outline: none;
-  margin: 1rem;
+  margin: .6rem 1rem;
 }
 .additional_options {
   display: block;
@@ -112,16 +123,21 @@ button {
 .circle {
   left: -6rem;
   position: absolute;
+  bottom: 0;
   width: 200px;
   height: 200px;
   border-radius: 50%;
   background: linear-gradient(85deg, orangered, transparent);
 }
 .footer {
-  position: relative;
-  height: fit-content;
+  position: absolute;
+  width: 100vw;
+  bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 3rem;
-  text-align: center;
   font-family: mosRegular;
   color: white;
 }

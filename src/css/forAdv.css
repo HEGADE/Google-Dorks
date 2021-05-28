@@ -7,9 +7,10 @@
 .options_container {
   display: flex;
   gap: 3rem;
-  margin: 1rem;
+  margin: .8rem;
 }
 .options_container > div {
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   width: max-content;
   font-size: medium;
   border-radius: 1000px;
@@ -24,7 +25,9 @@
 
 
 .advance_input_container {
-margin: 50px auto;
+  transition: height 1s linear;
+
+margin: 30px auto;
   max-width: 80vh;
   padding: 1rem;
   background-color: var(--input-Bg-color);
@@ -37,7 +40,7 @@ margin: 50px auto;
 }
 @media (max-width: 800px) {
   .advance_input_container {
-    margin: 2rem 1rem;
+    margin: .6rem 1rem;
   
   }
 }
