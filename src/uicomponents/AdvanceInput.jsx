@@ -16,7 +16,7 @@ export const AdvanceInput = () => {
       </div>
 
       <div className="advance_input_container" style={sty}  >
-        {phoneOrInsta ? <Phone setHeight="max-content"/> : <Insta setHeight="420px" />}
+        {phoneOrInsta ? <Phone setHeight="max-content"/> : <Insta setHeight="420px" /> }
         <Button type={phoneOrInsta ?"Find":"Search"} />
       </div>
     </>

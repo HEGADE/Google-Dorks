@@ -9,6 +9,7 @@ function Options() {
       <div className="options_container">
         <AdOptions text="Phone"  color="blue"/>
         <AdOptions text="Insta" />
+        <AdOptions text="Pdf" />
       
       </div>
     </>

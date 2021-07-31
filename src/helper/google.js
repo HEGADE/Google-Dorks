@@ -1,5 +1,5 @@
 export const google = (search, exclude, sites) => {
-  if (search.trim().length <= 0 || exclude.trim().length <= 0)
+  if (search.trim()?.length <= 0 || exclude.trim()?.length <= 0)
     return alert("Fill the field");
   let excludedString = makeExcludeString(exclude);
   let site = sites ? "site:" : "";
