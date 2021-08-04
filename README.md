@@ -5,4 +5,9 @@
 * Phone number finding
 * Instagram user finding
 
+https://google-dorks.herokuapp.com/
+
+
+
 Code is little  bit messy😅
+
