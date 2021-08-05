@@ -7,7 +7,7 @@
 .options_container {
   display: flex;
   gap: 3rem;
-  margin: .8rem;
+  margin: 0.8rem;
 }
 .options_container > div {
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -22,12 +22,10 @@
   cursor: pointer;
 }
 
-
-
 .advance_input_container {
   transition: height 1s linear;
 
-margin: 30px auto;
+  margin: 30px auto;
   max-width: 80vh;
   padding: 1rem;
   background-color: var(--input-Bg-color);
@@ -40,18 +38,16 @@ margin: 30px auto;
 }
 @media (max-width: 800px) {
   .advance_input_container {
-    margin: .6rem 1rem;
-  
+    margin: 0.6rem 1rem;
   }
 }
-.advance_input_container >div{
-  margin: .1rem 1rem;
+.advance_input_container > div {
+  margin: 0.1rem 1rem;
   width: 90%;
 }
-.advance_input_container p{
-  margin: .5rem;
+.advance_input_container p {
+  margin: 0.5rem;
   color: white;
-  
 }
 .advance_input_container input {
   width: 100%;
@@ -63,5 +59,4 @@ margin: 30px auto;
   font-family: mosRegular;
   margin: 0.4rem;
   padding: 0.99rem;
-
 }
