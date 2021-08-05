@@ -7,7 +7,6 @@ const Button = ({type}) => {
     const {google,numberFinder,search,exclude,sites} =useContext(storeStore)
 
     function Search(e) {
-        console.log(e.target.innerText);
         if(e.target.innerText==="Filter")
          return google(search, exclude, sites);
         if(e.target.innerText==="Find")

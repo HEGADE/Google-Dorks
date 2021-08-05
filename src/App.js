@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import { Intro } from "./uicomponents/Intro";
 import { Input } from "./uicomponents/Input";
 import { AdvanceInput } from "./uicomponents/AdvanceInput";
