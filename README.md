@@ -4,6 +4,7 @@
 * Filtering search results
 * Phone number finding
 * Instagram user finding
+* (Searching for pdf is on development .....)
 
 https://google-dorks.herokuapp.com/
 
