@@ -27,10 +27,12 @@ const makeExcludeString = (exclude) => {
   return null;
 };
 const makeFileTypeString = (fileType) => {
+
   let fileTypeString = "";
   if (fileType) {
     fileType = `filetype:${fileTypeString || fileType}`;
     return fileType;
   }
   return null;
+
 };
