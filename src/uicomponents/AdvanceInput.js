@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import AdvanceOptions from "../AdvanceOptions/Options";
 import { Phone, Insta } from "../AdvanceOptions/AdvanceOptUiComponents/Phone";
-import Button from "../uicomponents/Button";
+import Button from "./Button";
 import { storeStore } from "../state/Store";
 
 export const AdvanceInput = () => {
