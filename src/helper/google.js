@@ -28,7 +28,6 @@ const makeExcludeString = (exclude) => {
   return (exclude = excludedString || exclude);
 };
 const makeFileTypeString = (fileType) => {
-  
-  fileType=`filetype:${fileType}`
-  return fileType;
+ 
+  return fileType.trim().length<=0?null:`filetype:${fileType}`;
 };
