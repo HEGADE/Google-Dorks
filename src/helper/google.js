@@ -1,9 +1,20 @@
-export const google = (search, exclude, sites) => {
-  if (search.trim()?.length <= 0 || exclude.trim()?.length <= 0)
+export const google = (search, exclude, sites,fileType) => {
+  if (search.trim()?.length <= 0)
     return alert("Fill the field");
+  let fileTypeString = makeFileTypeString(fileType);
   let excludedString = makeExcludeString(exclude);
-  let site = sites ? "site:" : "";
-  window.location = `https://google.com/search?q=${search} ${excludedString} ${site} ${sites}  `;
+  let site = sites ? `site: ${sites}` : "";
+  let url=`https://google.com/search?q=${search}`;
+  if(excludedString)
+  url +=` ${excludedString}`
+  if(sites)
+  url+=` ${site}`;
+  console.log(fileTypeString);
+  if(fileTypeString)
+  url+= ` ${fileTypeString}`
+
+  console.log(url);
+  window.location = url;
 };
 const makeExcludeString = (exclude) => {
   let excludedString = "";
@@ -15,4 +26,9 @@ const makeExcludeString = (exclude) => {
     }
   }
   return (exclude = excludedString || exclude);
+};
+const makeFileTypeString = (fileType) => {
+  
+  fileType=`filetype:${fileType}`
+  return fileType;
 };
