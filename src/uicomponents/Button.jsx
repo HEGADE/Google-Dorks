@@ -4,11 +4,13 @@ import {userFinder} from "../helper/userFinder"
 
 
 const Button = ({type}) => {
-    const {google,numberFinder,search,exclude,sites} =useContext(storeStore)
+    const {google,numberFinder,search,exclude,sites,fileType} =useContext(storeStore)
 
     function Search(e) {
-        if(e.target.innerText==="Filter")
-         return google(search, exclude, sites);
+        if(e.target.innerText==="Filter"){
+            return google(search, exclude, sites,fileType);
+        }
+        
         if(e.target.innerText==="Find")
          return numberFinder(search);
         if(e.target.innerText==="Search")

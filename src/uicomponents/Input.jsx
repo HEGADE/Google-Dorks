@@ -13,6 +13,8 @@ export const Input = () => {
     setExclude,
     sites,
     setSites,
+    fileType,
+    setFileType,
     showHelpOrNot,
     setshowHelpOrNot,
   } = useContext(storeStore);
@@ -36,11 +38,11 @@ export const Input = () => {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-          <Label text="Enter  things to Exclude  *" />
+          <Label text="Enter  things to Exclude " />
 
           <input
             type="text"
-            placeholder="Hitler"
+            placeholder="Ex: JQuery"
             value={exclude}
             onClick={showHelp}
             onChange={(e) => setExclude(e.target.value)}
@@ -52,6 +54,15 @@ export const Input = () => {
             placeholder="wikipedia"
             value={sites}
             onChange={(e) => setSites(e.target.value)}
+          />
+
+          <Label text="Search for specified file type" />
+
+          <input
+            type="text"
+            placeholder="Ex: pdf"
+            value={fileType}
+            onChange={(e) => setFileType(e.target.value)}
           />
           <Button type="Filter" />
         </div>
