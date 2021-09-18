@@ -48,7 +48,7 @@ export const Input = () => {
             value={exactSearch}
             onChange={(e) => setExactSearch(e.target.value)}
           />
-         
+
           <Label text="Enter  things to Exclude " />
 
           <input
@@ -75,8 +75,10 @@ export const Input = () => {
             value={fileType}
             onChange={(e) => setFileType(e.target.value)}
           />
-          <Button type="Filter" />
         </div>
+      
+          <Button type="Filter" />
+    
       </div>
     </>
   );
