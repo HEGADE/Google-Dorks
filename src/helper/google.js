@@ -4,7 +4,7 @@ export const google = (search = "", exclude, sites, fileType, exactSearch) => {
   let fileTypeString = makeFileTypeString(fileType);
   let excludedString = makeExcludeString(exclude);
   exactSearch = exactSearch ? `"${exactSearch}"` : "";
-  let site = sites ? `site: ${sites}` : "";
+  let site = sites ? `site:${sites}` : "";
   let url = `https://google.com/search?q=${search}`;
   if (excludedString) url += ` ${excludedString}`;
   if (sites) url += ` ${site}`;
@@ -12,7 +12,7 @@ export const google = (search = "", exclude, sites, fileType, exactSearch) => {
 
   if (exactSearch) url += ` ${exactSearch}`;
   if (excludedString) url += ` ${excludedString}`;
-  if (sites) url += ` ${site}`;
+ 
  
   window.location = url;
 };

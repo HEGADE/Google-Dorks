@@ -77,7 +77,7 @@ export const Input = () => {
           />
         </div>
       
-          <Button type="Search" />
+          <Button type="Filter" />
     
       </div>
     </>
