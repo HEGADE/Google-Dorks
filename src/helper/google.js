@@ -33,13 +33,10 @@ const makeFileTypeString = (fileType) => {
   let fileTypesString = "(";
   if (fileType) {
     if (fileType.indexOf(",")) {
-      let types = fileType.split(",");
-      for (let [i,v]of types.entries()) {
-        if(i===0)
-        fileTypesString += ` filetype:${v.trim()}`;
-        else
-        fileTypesString += ` OR filetype:${v.trim()}`;
-      }
+      let types = fileType.trim().split(",") 
+      types.forEach((element,index) => {
+        fileTypesString+=index===0?`filetype:${element}`:`OR filetype:${element}`;
+      });
       fileTypesString+=" )"
     }
   }
