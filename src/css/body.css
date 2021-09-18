@@ -51,7 +51,7 @@ body {
 }
 
 .container {
-  padding: .5rem;
+  padding: .8rem;
   z-index: 10;
   backdrop-filter: blur(20px);
   background-clip: padding-box;
