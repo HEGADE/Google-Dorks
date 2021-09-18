@@ -10,10 +10,10 @@
 
 ## `Features`
 
-* Filtering search results
+* Filtering search results * (also works for different file types)
 * Phone number finding
 * Instagram user finding
-* (Searching for pdf is on development .....)
+
 
 https://google-dorks.vercel.app/
 
