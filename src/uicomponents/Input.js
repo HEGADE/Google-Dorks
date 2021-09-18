@@ -15,6 +15,8 @@ export const Input = () => {
     setExclude,
     sites,
     setSites,
+    fileType,
+    setFileType,
     showHelpOrNot,
     setshowHelpOrNot,
   } = useContext(storeStore);
@@ -31,7 +33,7 @@ export const Input = () => {
     <>
       <div className="wrapper">
         <div className="container">
-          <Label text="Search Query" />
+          <Label text="General Query" />
           <input
             type="text"
             placeholder="My Struggle"
@@ -64,8 +66,19 @@ export const Input = () => {
             value={sites}
             onChange={(e) => setSites(e.target.value)}
           />
-          <Button type="Filter" />
+
+          <Label text="Search for specified file type" />
+
+          <input
+            type="text"
+            placeholder="Ex: pdf, doc, ppt"
+            value={fileType}
+            onChange={(e) => setFileType(e.target.value)}
+          />
         </div>
+      
+          <Button type="Search" />
+    
       </div>
     </>
   );

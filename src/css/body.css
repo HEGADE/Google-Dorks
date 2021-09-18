@@ -15,7 +15,6 @@
   src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
 }
 
-
 body {
   background: var(--body-Bg-color);
   overflow-x: hidden;
@@ -43,6 +42,11 @@ body {
   color: var(--intro-para-color);
 }
 
+.wrapper{
+  margin: auto;
+  max-width: 520px;
+}
+
 .container {
   padding: 1rem;
   z-index: 10;
@@ -50,21 +54,19 @@ body {
   background-clip: padding-box;
   border-radius: 0.3rem;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-  margin: 10px auto;
-  max-width: 80vh; /* intensionally used 80vh*/
+  margin: 50px auto;
   background: var(--input-Bg-color);
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 0.5rem;
+  height: fit-content;
+  max-height: 56vh;
+  overflow-y: scroll;
 }
-
 
 @media (max-width: 800px) {
   .container {
-    margin: 2rem 1rem;
-  
+    margin: 0.8rem 1rem;
   }
 }
 
@@ -97,6 +99,8 @@ input::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 
+
+
 button {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 
@@ -110,7 +114,8 @@ button {
   width: 55%;
   padding: 0.6rem;
   outline: none;
-  margin: .6rem 1rem;
+  display: block;
+  margin: 1rem auto;
 }
 
 .additional_options {
@@ -125,7 +130,7 @@ button {
 .circle {
   left: -6rem;
   position: absolute;
-  
+
   width: 200px;
   height: 200px;
   border-radius: 50%;
