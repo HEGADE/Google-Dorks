@@ -16,6 +16,10 @@
 * Phone number finding
 * Instagram user finding
 
+## `Demo`
+
+![demo](https://github.com/HEGADE/Google-Dorks/blob/main/public/page.jpg?raw=true)
+
 
 https://google-dorks.vercel.app/
 
