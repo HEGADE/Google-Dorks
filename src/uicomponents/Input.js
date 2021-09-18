@@ -38,13 +38,6 @@ export const Input = () => {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
-<<<<<<< HEAD:src/uicomponents/Input.js
-          <Label text="Enter  things to Exclude  *" />
-
-          <input
-            type="text"
-            placeholder="Hitler"
-=======
 
           <Label text="Exact Query" />
           <input
@@ -53,13 +46,12 @@ export const Input = () => {
             value={exactSearch}
             onChange={(e) => setExactSearch(e.target.value)}
           />
-         
+
           <Label text="Enter  things to Exclude " />
 
           <input
             type="text"
             placeholder="Ex: Hitler"
->>>>>>> main:src/uicomponents/Input.jsx
             value={exclude}
             onClick={showHelp}
             onChange={(e) => setExclude(e.target.value)}
