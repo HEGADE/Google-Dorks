@@ -3,7 +3,7 @@ import React, { useContext } from "react";
 import { storeStore } from "../state/Store";
 
 import Label from "./label/Label";
-import Button from "../uicomponents/Button";
+import Button from "./Button";
 
 export const Input = () => {
   const {
@@ -33,7 +33,7 @@ export const Input = () => {
     <>
       <div className="wrapper">
         <div className="container">
-          <Label text="Search Query" />
+          <Label text="General Query" />
           <input
             type="text"
             placeholder="My Struggle"
@@ -77,7 +77,7 @@ export const Input = () => {
           />
         </div>
       
-          <Button type="Filter" />
+          <Button type="Search" />
     
       </div>
     </>

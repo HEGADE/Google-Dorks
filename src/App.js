@@ -5,6 +5,7 @@ import { AdvanceInput } from "./uicomponents/AdvanceInput";
 import { Circle } from "./uicomponents/Circle";
 import { Footer } from "./uicomponents/Footer";
 import { useCleaner } from "./helper/useCleaner";
+import { Nav } from "./uicomponents/Nav";
 
 function App() {
   const [option, setOption] = useState("for advance options");
@@ -36,6 +37,7 @@ function App() {
   }
   return (
     <>
+    <Nav/>
       <Intro />
       {!display ? <Input /> : <AdvanceInput />}
 

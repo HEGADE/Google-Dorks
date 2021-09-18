@@ -36,7 +36,7 @@ const makeFileTypeString = (fileType) => {
       let types = fileType.split(",");
       for (let [i,v]of types.entries()) {
         if(i===0)
-        fileTypesString += ` filetype:${v}`;
+        fileTypesString += ` filetype:${v.trim()}`;
         else
         fileTypesString += ` OR filetype:${v.trim()}`;
       }
