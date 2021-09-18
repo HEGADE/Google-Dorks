@@ -6,7 +6,7 @@
 * Instagram user finding
 * (Searching for pdf is on development .....)..
 
-https://google-dorks.herokuapp.com/
+https://google-dorks.vercel.app/
 
 
 
