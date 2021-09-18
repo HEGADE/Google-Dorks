@@ -71,7 +71,7 @@ export const Input = () => {
 
           <input
             type="text"
-            placeholder="Ex: pdf"
+            placeholder="Ex: pdf, doc, ppt"
             value={fileType}
             onChange={(e) => setFileType(e.target.value)}
           />
