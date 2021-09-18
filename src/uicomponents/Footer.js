@@ -5,7 +5,7 @@ export const Footer = () => {
     <>
 
       <div className="footer">
-        <h3>Developed VS Group</h3>
+        <h3>Developed VS group of technology</h3>
         <p>All Rights Reserved &copy;</p>
       </div>
     </>
