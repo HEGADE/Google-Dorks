@@ -9,7 +9,10 @@
   --intro-heading-color: rgba(255, 255, 255, 0.5);
   --intro-para-color: rgba(255, 255, 255, 0.6);
 }
-::-webkit-scrollbar{display: none;}
+::-webkit-scrollbar {
+  display: none;
+}
+
 @font-face {
   font-family: mosRegular;
   src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
@@ -42,13 +45,13 @@ body {
   color: var(--intro-para-color);
 }
 
-.wrapper{
+.wrapper {
   margin: auto;
   max-width: 520px;
 }
 
 .container {
-  padding: 1rem;
+  padding: .5rem;
   z-index: 10;
   backdrop-filter: blur(20px);
   background-clip: padding-box;
@@ -60,19 +63,19 @@ body {
   align-items: center;
   flex-direction: column;
   height: fit-content;
-  max-height: 56vh;
+  max-height: 57vh;
   overflow-y: scroll;
 }
 
 @media (max-width: 800px) {
   .container {
+    max-height: 45vh;
     margin: 0.8rem 1rem;
   }
 }
 
 .container input {
   z-index: 2;
-
   backdrop-filter: blur(200px);
   background-clip: padding-box;
   border-radius: 0.3rem;
@@ -99,11 +102,8 @@ input::placeholder {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
-
 button {
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
-
   cursor: pointer;
   font-family: mosRegular;
   color: rgb(255, 255, 255);
