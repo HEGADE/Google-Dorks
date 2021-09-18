@@ -1,28 +1,24 @@
-.navigation_container{
-
-   padding: 1.3rem;
-    background: #222a3b;
-    display: flex;
-    justify-content: space-between;
- 
-
+.navigation_container {
+  padding: 1.3rem;
+  background: #222a3b;
+  display: flex;
+  justify-content: space-between;
 }
-.nav_heading{
-    margin-left: .8rem;
-    color: #dfa60a;
+.nav_heading {
+  margin-top: 0.3rem;
+  margin-left: 0.8rem;
+  color: #dfa60a;
 }
-.github_icon{
-
-    border-radius: 50%;
-    width: max-content;
-    height: max-content;
-    padding: 0;
+.github_icon {
+  border-radius: 50%;
+  width: max-content;
+  height: max-content;
+  padding: 0;
 }
-.navigation_container img{
-    object-fit: cover;
-    object-position: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-
+.navigation_container img {
+  object-fit: cover;
+  object-position: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
