@@ -10,8 +10,8 @@ export const Nav = () => {
         </div>
 
         <div className="github_icon">
-          <a href="https://github.com/HEGADE/Google-Dorks"  target="_blank">
-            <img src="icon.png" alt="icon"   />
+          <a href="https://github.com/HEGADE/Google-Dorks" target="_blank">
+            <img src="icon.png" alt="icon" />
           </a>
         </div>
       </nav>

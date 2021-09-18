@@ -9,6 +9,7 @@
   --intro-heading-color: rgba(255, 255, 255, 0.5);
   --intro-para-color: rgba(255, 255, 255, 0.6);
 }
+::-webkit-scrollbar{display: none;}
 @font-face {
   font-family: mosRegular;
   src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
