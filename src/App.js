@@ -5,7 +5,8 @@ import { AdvanceInput } from "./uicomponents/AdvanceInput";
 import { Circle } from "./uicomponents/Circle";
 import { Footer } from "./uicomponents/Footer";
 import { useCleaner } from "./helper/useCleaner";
-import { Nav } from "./uicomponents/Nav";
+import { Nav } from "./uicomponents/Nav";import MasterMode from "./masterMode/Master"
+import {Loading} from "./utils/Loading"
 
 function App() {
   const [option, setOption] = useState("for advance options");
@@ -33,19 +34,21 @@ function App() {
   };
 
   if (loading) {
-    return <h1 style={STYLE}>Loading..</h1>;
+    return <Loading/>;
   }
   return (
     <>
     <Nav/>
       <Intro />
-      {!display ? <Input /> : <AdvanceInput />}
+    <MasterMode/>
+
+      {/* {!display ? <Input /> : <AdvanceInput />}
 
       <strong className="additional_options" onClick={determine}>
         {option}
       </strong>
 
-      <Circle />
+      <Circle /> */}
       {!display && <Footer />}
     </>
   );
