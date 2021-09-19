@@ -5,8 +5,6 @@ export const google = (search = "", exclude, sites, fileType, exactSearch) => {
   let excludedString = makeExcludeString(exclude);
   exactSearch = exactSearch ? `"${exactSearch}"` : "";
   let site = sites ? `site:${sites}` : "";
-
-
   let url = `https://google.com/search?q=${search}`;
   if (sites) url += ` ${site}`;
   if (excludedString) url += ` ${excludedString}`;
