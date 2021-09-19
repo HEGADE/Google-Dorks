@@ -40,15 +40,15 @@ function App() {
     <>
     <Nav/>
       <Intro />
-    <MasterMode/>
+    <MasterMode/> 
 
-      {/* {!display ? <Input /> : <AdvanceInput />}
+ {!display ? <Input /> : <AdvanceInput />}
 
       <strong className="additional_options" onClick={determine}>
         {option}
       </strong>
 
-      <Circle /> */}
+      <Circle /> 
       {!display && <Footer />}
     </>
   );
