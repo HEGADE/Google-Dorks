@@ -19,7 +19,7 @@ const makeExcludeString = (exclude) => {
     if (exclude.indexOf(",")) {
       let excluded = exclude.split(",");
       for (let iterator of excluded) {
-        excludedString += ` -"${iterator.trim()}"`;
+        excludedString += ` -${iterator.trim()}`;
       }
     }
     return excludedString;
