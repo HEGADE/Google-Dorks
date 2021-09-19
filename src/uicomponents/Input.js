@@ -53,9 +53,9 @@ export const Input = () => {
 
           <input
             type="text"
-            placeholder="Ex: Hitler, JQuery"
+            placeholder="Ex: Hitler"
             value={exclude}
-            // onClick={showHelp}
+            onClick={showHelp}
             onChange={(e) => setExclude(e.target.value)}
           />
           <Label text="Search in specified site" />
